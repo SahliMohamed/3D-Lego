@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JQuery Examples</title>
+	<link rel="stylesheet" type="text/css" href="css/exemples.css">
+	<link rel="stylesheet" type="text/css" href="css/fontawesome-free-5.9.0-web/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/Normalize.css">
+</head>
+<body>
+	<!--start navbar-->
+	<ul class="navbar">
+		<li><a href="#" data-scroll="home">Home</a></li>
+		<li><a href="#" data-scroll="about-us">About us</a></li>
+		<li><a href="#" data-scroll="services">Services</a></li>
+		<li><a href="#" data-scroll="solutions">Solutions</a></li>
+		<li><a href="#" data-scroll="products">Products</a></li>
+		<li><a href="#" data-scroll="contact-us">Contact us</a></li>
+	</ul>
+	<!--end navbar-->
+	<!--start fixed menu-->
+	<div class="fixed-menu">
+		<h3>change color</h3>
+			<ul class="change-colors">
+				<li data-color="blue"></li>
+				<li data-color="red"></li>
+				<li data-color="green"></li>
+				<li data-color="purple"></li>
+				<li data-color="wheat"></li>
+			</ul>
+		<h3>change color</h3>
+		<span>choose your color</span>
+		<i class="fas fa-cog"></i>
+	</div>
+	<!--end fixed menu-->
+	<!--start sections-->
+	<div id="home" class="block">
+		<h1>Home</h1>
+		<button class="show-popup" data-popup="first-popup">Show 1<sup>st</sup> popup</button>
+		<button class="show-popup" data-popup="second-popup">Show 2<sup>nd</sup> popup</button>
+	<!--startbutton effects-->		
+		<div class="button-effects">
+			<button class="button-effect from-left">
+				<span></span>
+				<span>From left</span>
+			</button>
+			<button class="button-effect from-top">
+				<span></span>
+				<span>From top</span>
+			</button>
+			<button class="button-effect border-left">
+				<span></span>
+				<span>Border left</span>
+			</button> 
+			<button class="button-effect border-top">
+				<span></span>
+				<span>Border left</span>
+			</button>
+			<button class="button-effect bounce bounce-once ">
+				<span>Bounce once</span>
+			</button>
+			<button class="button-effect bounce bounce-twice">
+				<span>Bounce twice</span>
+			</button>
+		</div>
+	<!--end button effects-->
+	<!--start progress bar-->
+		<div class="animated-progress progress-blue">
+			<span data-progress="45%"></span>
+		</div>
+		<div class="animated-progress progress-red">
+			<span data-progress="25%"></span>
+		</div>
+		<div class="animated-progress progress-purple">
+			<span data-progress="60%"></span>
+		</div>
+		<div class="animated-progress progress-green">
+			<span data-progress="82%"></span>
+		</div>
+    <!--end progress bar-->
+    <!--start gallery-->
+		<div class="gallery">
+			<div class="master-img">
+				<i class="fas fa-chevron-left fa-3x"></i>
+				<i class="fas fa-chevron-right fa-3x"></i>
+				<img src="images/1.png">
+			</div>
+			<div class="thumbnails">
+				<img class="selected" src="images/1.png">
+				<img src="images/2.jpg">
+				<img src="images/3.jpg">
+				<img src="images/4.jpg">
+				<img src="images/5.jpg">
+				<img src="images/6.jpg">
+			</div>
+		</div>
+	<!--end gallery-->
+	<!--start products-->
+	<div class="products">
+		<div class="product">
+			<h3>Product 1</h3>
+			<span class="date">23/02/2000</span>
+			<img src="http://placehold.it/100/DDD/000">
+			<i class="fas fa-angle-down"></i>
+			<p class="description">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms</p>
+		</div>
+		<div class="product">
+			<h3>Product 2</h3>
+			<span class="date">23/02/2000</span>
+			<img src="http://placehold.it/100/DDD/000">
+			<i class="fas fa-angle-down"></i>
+			<p class="description">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms</p>
+		</div>
+	</div>
+	<!--end products-->
+	<!--start item-->
+	<div class="items list-view">
+		<div class="view-option">
+			<i class="fas fa-th-large" data-class="grid-view"></i>
+			<i class="active fas fa-list" data-class="list-view"></i>
+		</div>
+		<div class="item">
+			<h3>Product 1</h3>
+			<span class="date">23/02/2000</span>
+			<img src="http://placehold.it/100/DDD/000">
+			<i class="fas fa-angle-down"></i>
+			<p class="description">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms</p>
+		</div>
+		<div class="item">
+			<h3>Product 2</h3>
+			<span class="date">23/02/2000</span>
+			<img src="http://placehold.it/100/DDD/000">
+			<i class="fas fa-angle-down"></i>
+			<p class="description">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms</p>
+		</div>
+	</div>
+	<!--end item-->
+	<!--start our form-->
+	<div class="our-form">
+		<form>
+			<div>
+				<input type="text"  required="required" placeholder="Type your text">
+				<span class="the-message">Please fill this field</span>
+			</div>
+			<div>
+				<input type="email"  class="auto-direction" required="required" placeholder="Type your email">
+				<span class="the-message">Please fill this field</span>
+			</div>
+			<div>
+				<input type="password"  required="required" placeholder="Type your password">
+				<span class="the-message">Please fill this field</span>
+			</div>
+			<div>
+				<textarea required="required" placeholder="Type your message"></textarea>
+				<span class="the-message">Please fill this field</span>
+			</div>
+			<div>
+				<input class="add-tag" type="text" placeholder="Please type tags then press [ , ]">
+				<div class="tags"></div>
+			</div>
+			<div>
+				<input type="file" >
+			</div>
+			<input type="submit" value="Send">
+		</form>
+	</div>
+	<!--end our form-->
+	<!--start trimmed text-->
+	<div class="trimmed-text">
+		<p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p class="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<!--end trimmed text-->
+
+	<!--start same height divs-->
+	<div class="container same-height">
+		<div class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		laboris nisi ut aliquip ex ea commodo
+		consequat.</div>
+		<div class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud boris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur.</div>
+		<div class="three">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	</div>
+	<!--send same height divs-->
+
+	<!-- start shuffle cards -->
+	<div class="container">
+		<div class="cards">
+			<div class="card nine">9</div>
+			<div class="card eight">8</div>
+			<div class="card seven">7</div>
+			<div class="card six">6</div>
+			<div class="card five">5</div>
+			<div class="card four">4</div>
+			<div class="card three">3</div>
+			<div class="card two ">2</div>
+			<div class="card one">1</div>
+		</div>
+	</div>
+	<!-- end shuffle cards -->
+
+	<!-- start blink warning -->
+	<div class="container">
+		<h1 class="blink-warning">Warning</h1>
+	</div>
+	<!-- start blink warning -->
+
+	<!-- start to do list  -->
+	<div class="container">
+		<div class="todo-list">
+			<h3>To Do list</h3>
+			<ul class="tasks"></ul>
+			<form class="add-task" method="POST">
+				<input class="task-input" type="text" name="task" placeholder="Add new task">
+			</form>
+		</div>
+	</div>
+	<!-- end to do list  -->
+
+	<!-- start type writer effect -->
+	<div class="container">
+		<div class="typerDiv">
+			<p class="typer" data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></p>
+		</div>
+	</div>
+	<!-- end type writer effect -->
+
+	<!-- start How To Calculate Item Prices -->
+	<div class="container">
+		<table class="summary">
+			<tr>
+				<td>Name</td>
+				<td>Value</td>
+				<td>Price</td>
+			</tr>
+			<tr>
+				<td>Data One</td>
+				<td>10 Items</td>
+				<td class="price">100</td>
+			</tr>
+			<tr>
+				<td>Data Two</td>
+				<td>5 Item</td>
+				<td class="price">80</td>
+			</tr>
+			<tr>
+				<td>Data Three</td>
+				<td>1 Item</td>
+				<td class="price">20</td>
+			</tr>
+			<tr>
+				<td>Data Four</td>
+				<td>20 Item</td>
+				<td class="price">200</td>
+			</tr>
+			<tr>
+				<td>Data Five</td>
+				<td>2 Item</td>
+				<td class="price">28</td>
+			</tr>
+			<tr>
+				<td colspan="2">Total:</td>
+				<td class="the-total"></td>
+			</tr>
+
+		</table>
+	</div>
+	<!-- endHow To Calculate Item Prices -->
+
+	<!-- start How To Auto Change Content -->
+	<div class="container">
+		<div class="text-ticker">
+			<h3>Today Notes</h3>
+			<ul class="ticker-list">
+				<li class="active">This is line number 1 to test</li>
+				<li>This is line number 2 to test</li>
+				<li>This is line number 3 to test</li>
+				<li>This is line number 4 to test</li>
+				<li>This is line number 5 to test</li>
+			</ul>
+		</div>
+	</div>
+	<!-- start How To Auto Change Content -->
+
+	<!-- start Create Dynamic Tabs -->
+	<div class="container">
+		<span class="switch-view">Switch view</span>
+		<div class="dynamic-tabs left-tabs">
+			<ul class="tabs-list">
+				<li class="active" data-content=".content-one">One</li>
+				<li data-content=".content-two">Two</li>
+				<li data-content=".content-three">Three</li>
+				<li data-content=".content-four">Four</li>
+				<li data-content=".content-five">Five</li>
+			</ul>
+			<div class="content-list">
+				<div class="content-one">This is content number one</div>
+				<div class="content-two">This is content number two</div>
+				<div class="content-three">This is content number three</div>
+				<div class="content-four">This is content number four</div>
+				<div class="content-five">This is content number five</div>
+			</div> 
+		</div>
+	</div>
+	<!-- end Create Dynamic Tabs -->
+
+	<!-- start Create Email Suggest Box  -->
+	<div class="container">
+		<form>
+			<input 
+			class="email-suggest"
+			type="email" 
+			name="email" 
+			autocomplete="off"
+			placeholder="Type your Email"/>
+		</form>
+	</div>
+	<!-- end Create Email Suggest Box  -->
+	</div>
+	<div id="about-us" class="block">
+		<h1>About us</h1>
+	</div>
+	<div id="services" class="block">
+		<h1>services</h1>
+	</div>
+	<div id="solutions" class="block">
+		<h1>solutions</h1>
+	</div>
+	<div id="products" class="block">
+		<h1>products</h1>
+	</div>
+	<div id="contact-us" class="block">
+		<h1>contact-us</h1>
+	</div>
+	<!--end sections-->
+	<a class="scroll-to-top" href="#">
+		<i class="fas fa-chevron-up"></i>
+	</a>
+	<!--start popup-->
+	<div class="popup first-popup">
+		<div class="inner">
+			<h2>This is our 1<sup>st</sup> popup</h2>
+			<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<button class="close">Close</button>
+			
+		</div>
+	</div>
+	<div class="popup second-popup">
+		<div class="inner">
+			<h2>This is our 2<sup>nd</sup> popup</h2>
+			<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<button class="close">Close</button>
+			
+		</div>
+	</div>
+	<!--end popup-->
+	<!--start error message-->
+	<div class="error-message">
+		This is error message This is error message
+	</div>
+	<!--end error message-->
+	<script type="text/javascript" src="js/minijquery.js"></script>
+	<script type="text/javascript" src="js/exemples.js"></script>
+</body>
+</html>

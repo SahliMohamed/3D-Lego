@@ -1,0 +1,61 @@
+*{padding:0;margin:0;}
+h1{
+	display:none;/*ki nenzel twalli display block*/
+}
+h2{
+	display:block;
+}
+div{
+	width: 300px;
+	height:50px;
+	background-color:gray;
+	border: 1px solid black;
+	margin:10px;
+	padding: 10px
+}
+.slides{
+	width: 300px;
+	height:50px;
+	background-color:gray;
+	border: 1px solid ;
+	margin:10px;
+	padding: 10px
+}
+section{
+
+	border:1px solid red;
+	width: 600px
+}
+section .top{
+	border: 1px solid red;
+	background-color:white;
+	margin:5px;
+}
+section .top p{
+	border:1px solid red;
+	margin:5px;
+	padding:5px;
+}
+section .top p span{
+	border:1px solid red;
+}
+.traversing{
+	width:90%;
+	height: 20px;
+	margin: 10px auto;
+}
+.video23{
+	width: 100px;
+	height: 50px;
+	background-color: green;
+}
+.mouchMawjoud{
+	display: none;
+}
+.circle{
+	width:1px;
+	height: 1px;
+	border-radius: 50%;
+	background-color: red;
+	border: 1px solid black
+}
